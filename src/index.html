@@ -20,7 +20,9 @@ path: home
             </h2>
             <p class="text-base leading-6 text-gray-500 mb-3">
                 <time>
-                    {{ post.date | readableDate }}
+                    {{ post.date.toFormat(
+      "LLL dd yyyy"
+    ); }}
                     by
                     <a>{{ post.data.author }}</a>
 
