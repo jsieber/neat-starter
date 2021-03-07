@@ -1,8 +1,8 @@
 ---
 title: Quesadilla Chicken Bake
 description: Easy and fast dinner with a base of grocery store rotisserie chicken.  
-author: Surjith S M
-date: 2020-09-01
+author:
+date: 2021-03-11
 tags:
   - Mexican
   - Chicken
