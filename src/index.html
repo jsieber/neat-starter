@@ -18,6 +18,9 @@ path: home
                     {% endif %}
                 </a>
             </h2>
+            <a href="{{ post.url | url }}">
+              <img src="{{ post.data.featureImagePath }}" alt="{{ post.data.title }}" />
+            </a>
             <p class="text-base leading-6 text-gray-500 mb-3">
                 <time>
                     {{ post.date.toDateString() }}

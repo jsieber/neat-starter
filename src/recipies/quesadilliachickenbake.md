@@ -3,6 +3,7 @@ title: Chicken Quesadilla Bake
 description: Easy and fast dinner with a base of grocery store rotisserie chicken.  
 author:
 date: 2021-03-20
+featureImagePath: /static/img/20210220_QuesadillaBake-11.jpg
 tags:
   - Mexican
   - Chicken
@@ -39,4 +40,4 @@ tags:
 8. Place the final tortilla shell in the center of the quesadilla. Fold all of the tortilla shells over the top and then brush the remaining butter over the surface.
 ![Quesadilla Bake](/static/img/20210220_QuesadillaBake-9.jpg)
 9. Place the second baking sheet on top of the quesadilla and push down firmly. Bake for 25 - 30 minutes. Remove from oven and carefully remove from baking sheet. Cut in squares, we use kitchen scissors and then enjoy!
-![Quesadilla Bake](/static/img/20210220_QuesadillaBake-10.jpg) 
+![Quesadilla Bake](/static/img/20210220_QuesadillaBake-10.jpg)
