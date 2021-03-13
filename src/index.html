@@ -23,7 +23,7 @@ path: home
             </a>
             <p class="text-base leading-6 text-gray-500 mb-3">
                 <time>
-                    {{ post.date.toDateString() }}
+                    {{ post.date | readableDate }}
                     {% if post.data.author %}
                     by
                     <a>{{ post.data.author }}</a>
