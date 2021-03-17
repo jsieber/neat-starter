@@ -40,6 +40,6 @@ tags:
 2. Place the salmon filets in the smoker and smoke until internal temperature of the largest filet is 120° F.
 ![Smoking Salmon Filets](/static/img/20210310/20210310_SmokedSalmon-15.jpg)
 9. Apply honey or maple syrup to the top of each filet and then continue cooking until the internal temprature reaches 140° F.
-![Smoked Salmon](/static/img/20210310/20210310_SmokedSalmon-16.jpg)
+![Smoked Salmon](/static/img/20210310/20210310_SmokedSalmon-17.jpg)
 
 Enjoy!
