@@ -1,6 +1,6 @@
 ---
 title: Smoked Salmon
-description: Dry brine smoked salmon filets  
+description: Dry brined smoked salmon filets  
 author:
 date: 2021-03-10
 featureImagePath: /static/img/20210310/20210310_SmokedSalmon-18.jpg
@@ -9,7 +9,7 @@ tags:
   - Fish
   - Smoker
 ---
-![Smoked Salmon](/static/img/20210310/20210310_SmokedSalmon-18.jpg)
+![Smoked Salmon](/static/img/20210310/20210310_SmokedSalmon-17.jpg)
 ## Ingredients
 
 * 2 salmon filets with skin
