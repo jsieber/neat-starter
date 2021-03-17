@@ -33,7 +33,7 @@ tags:
 5. Place second cookie sheet on top and then place heavy objects on second cookie sheet to apply pressure. Leave in refrigerator for 12 to 24 hours.
 ![Dry Brine](/static/img/20210310/20210310_SmokedSalmon-9.jpg)
 6. Remove from the fridge and rinse any of the salt/sugar mixture off the salmon with cold water. Place on a rack and let sit in the refirgerator for another 24 hours.
-![Salmon Filets](/static/img/20210310/20210310_SmokedSalmon-11.jpg)
+![Salmon Filets](/static/img/20210310/20210310_SmokedSalmon-10.jpg)
 
 ### Smoking the Salmon
 1. Preheat smoker to 160° F.
