@@ -6,7 +6,7 @@ prism: true
 <div class="container max-w-4xl mt-6  px-6">
     <div class="pb-5 mb-5 border-b border-gray-100">
         <h1 class="font-bold text-5xl">{{title}}</h1>
-        <p class="text-center text-base leading-6 font-medium text-gray-500">
+        <p class="prose lg:prose-xl  mx-auto text-base font-medium text-gray-400">
             <time> {{ date | readableDate }}
                 {% if author %}
                 by
@@ -36,5 +36,5 @@ prism: true
         (d.head || d.body).appendChild(s);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>    
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
