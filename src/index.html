@@ -9,7 +9,7 @@ path: home
 
     {% for post in postslist | reverse %}
         <article class="my-8">
-            <h2 class="font-bold text-3xl text-gray-900 mb-2">
+            <h2 class="font-bold text-3xl text-gray-900 mb-2 ">
                 <a href="{{ post.url | url }}">
                     {% if post.data.title %}
                         {{ post.data.title }}
@@ -19,7 +19,7 @@ path: home
                 </a>
             </h2>
             <p class="text-base leading-6 text-gray-500 mb-3">
-                <time>
+                <time class="italic">
                     {{ post.date | readableDate }}
                     {% if post.data.author %}
                     by
