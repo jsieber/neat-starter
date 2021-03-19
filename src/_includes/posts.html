@@ -7,9 +7,13 @@ prism: true
 
     <div class="prose lg:prose-xl my-4 mx-auto pb-5 mb-5 border-b border-gray-100">
         <h1 class="font-bold text-5xl">{{ site.title }}</h1>
-        <h2 class="font-bold text-5xl">{{title}}</h2>
-        <p class="prose lg:prose-xl  mx-auto text-base font-medium text-gray-400">
-            <time> {{ date | readableDate }}
+        <p class="text-center text-lg italic leading-relaxed">
+          {{ site.tagline }}
+        </p>
+        <article class="prose lg:prose-xl my-4 mx-auto">
+        <h2 class="font-bold text-3xl text-gray-900 mb-2 ">{{title}}</h2>
+        <p class="text-base leading-6 text-gray-500 mb-3">
+            <time class="italic"> {{ date | readableDate }}
                 {% if author %}
                 by
                 <a>{{ author }}</a>
@@ -17,9 +21,10 @@ prism: true
             </time>
         </p>
 
-    </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ content | safe }}</article>
+
+
+        {{ content | safe }}
+      </article>
 
         {% include "./partials/comments.html" %}
 </div>
