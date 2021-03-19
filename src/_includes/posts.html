@@ -4,9 +4,10 @@ prism: true
 ---
 
 <div class="container max-w-5xl mt-6  px-6">
-  <h1 class="font-bold text-5xl">{{ site.title }}</h1>
-    <div class="pb-5 mb-5 border-b border-gray-100">
-        <h2 class="font-bold text-4xl">{{title}}</h2>
+
+    <div class="prose lg:prose-xl my-4 mx-auto pb-5 mb-5 border-b border-gray-100">
+        <h1 class="font-bold text-5xl">{{ site.title }}</h1>
+        <h2 class="font-bold text-5xl">{{title}}</h2>
         <p class="prose lg:prose-xl  mx-auto text-base font-medium text-gray-400">
             <time> {{ date | readableDate }}
                 {% if author %}
