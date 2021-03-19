@@ -5,26 +5,27 @@ prism: true
 
 <div class="container max-w-5xl mt-6  px-6">
 
-    <div class="prose lg:prose-xl my-4 mx-auto pb-5 mb-5 border-b border-gray-100">
+    <div class="my-4 mx-auto pb-5 mb-5 border-b border-gray-100">
         <h1 class="font-bold text-5xl">{{ site.title }}</h1>
         <p class="text-center text-lg italic leading-relaxed">
           {{ site.tagline }}
         </p>
-        <article class="prose lg:prose-xl my-4 mx-auto">
-        <h2 class="font-bold text-3xl text-gray-900 mb-2 ">{{title}}</h2>
-        <p class="text-base leading-6 text-gray-500 mb-3">
-            <time class="italic"> {{ date | readableDate }}
-                {% if author %}
-                by
-                <a>{{ author }}</a>
-                {% endif %}
-            </time>
-        </p>
+    </div>
+      <article class="prose lg:prose-xl my-4 mx-auto">
+      <h2 class="font-bold text-3xl text-gray-900 mb-2 ">{{title}}</h2>
+      <p class="text-base leading-6 text-gray-500 mb-3">
+          <time class="italic"> {{ date | readableDate }}
+              {% if author %}
+              by
+              <a>{{ author }}</a>
+              {% endif %}
+          </time>
+      </p>
 
 
 
-        {{ content | safe }}
-      </article>
+      {{ content | safe }}
+    </article>
 
-        {% include "./partials/comments.html" %}
+    {% include "./partials/comments.html" %}
 </div>
