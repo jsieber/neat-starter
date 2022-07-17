@@ -3,47 +3,70 @@ layout: blog
 title: I'm In The Mood For Food
 path: home
 ---
+<div class="flex">
+    <div class="basis-3/4">
+        <section class="mt-15">
+            {% set postslist = collections.recipies %}
+            {% set tags = post.data.tags %}
 
-<section class="mt-15">
-    {% set postslist = collections.recipies %}
-
-    {% for post in postslist | reverse %}
-        <article class="my-8">
-            <h2 class="font-bold text-3xl text-gray-900 mb-2 ">
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
-                    {% else %}
-                        Untitled
+            {% for post in postslist | reverse %}
+                <article class="my-8">
+                    <h2 class="font-bold text-3xl text-gray-900 mb-2 ">
+                        <a href="{{ post.url | url }}">
+                            {% if post.data.title %}
+                                {{ post.data.title }}
+                            {% else %}
+                                Untitled
+                            {% endif %}
+                        </a>
+                    </h2>
+                    <div class="grid grid-cols-2 place-content-stretch gap-4">
+                        <div class="">
+                            <p class="text-base leading-6 text-gray-500 mb-3">
+                                <time class="italic">
+                                    {{ post.date | readableDate }}
+                                </time>
+                            </p>
+                        </div>
+                        <div class="content-end items-end">
+                            <p class="text-base text-right leading-6 text-gray-500 mb-3">
+                                {% if post.data.categories %}
+                                    Category: {{ post.data.categories }}
+                                {% endif %}
+                            </p>
+                        </div>
+                    </div>
+                    {% if post.data.featureImagePath %}
+                        <a href="{{ post.url | url }}">
+                        <img src="{{ post.data.featureImagePath }}" alt="{{ post.data.title }}" />
+                        </a>
                     {% endif %}
-                </a>
-            </h2>
-            <p class="text-base leading-6 text-gray-500 mb-3">
-                <time class="italic">
-                    {{ post.date | readableDate }}
-                    {% if post.data.author %}
-                    by
-                    <a>{{ post.data.author }}</a>
+                    {% if post.data.tags %}
+                        <ul>
+                            {% for tag in post.data.tags  %}
+                                <li>{{tag}}</li>
+                            {% endfor %}
+                        </ul>
                     {% endif %}
-                </time>
-            </p>
-            {% if post.data.featureImagePath %}
-                <a href="{{ post.url | url }}">
-                  <img src="{{ post.data.featureImagePath }}" alt="{{ post.data.title }}" />
-                </a>
-            {% endif %}
-            {% if post.data.description %}
-                <p class="text-lg text-gray-500 mb-3 pt-3">
-                    {{ post.data.description }}
-                </p>
-            {% endif %}
+                    {% if post.data.description %}
+                        <p class="text-lg text-gray-500 mb-3 pt-3">
+                            {{ post.data.description }}
+                        </p>
+                    {% endif %}
 
-            <p>
-                <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
-                    Read more →
-                </a>
-            </p>
+                    <p>
+                        <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
+                            Read more →
+                        </a>
+                    </p>
 
-        </article>
-    {% endfor %}
-</section>
+                </article>
+            {% endfor %}
+        </section>
+    </div>
+    <div class="basis-1/4">
+        <ul>
+            <li><a href="/fish">Fish</a></li>
+        </ul>
+    </div>
+</div>

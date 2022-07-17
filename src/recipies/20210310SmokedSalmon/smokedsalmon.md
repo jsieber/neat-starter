@@ -4,10 +4,13 @@ description: Dry brined smoked salmon filets. Easy to make and delicious to eat.
 author:
 date: 2021-03-10
 featureImagePath: /static/img/20210310/20210310_SmokedSalmon-17.jpg
-tags:
-  - Smoked Salmon
+categories:
   - Fish
+tags:
+  - Salmon
   - Smoker
+eleventyNavigation:
+  key: Fish
 ---
 ![Smoked Salmon](/static/img/20210310/20210310_SmokedSalmon-17.jpg)
 ## Ingredients
