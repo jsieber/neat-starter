@@ -18,6 +18,21 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addFilter("filterTagList", tags => {
+    // should match the list in tags.njk
+    return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+  })
+
+  // Create an array of all tags
+  eleventyConfig.addCollection("tagList", function(collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach(item => {
+      (item.data.tags || []).forEach(tag => tagSet.add(tag));
+    });
+
+    return [...tagSet];
+  });
+
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
   // Navigation 
